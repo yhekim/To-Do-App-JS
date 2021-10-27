@@ -4,7 +4,7 @@
 - https://yhekim.github.io/To-Do-App-JS/
 
 ## Description
-Project aims to create find the number game (between 0 to 100).
+
 
 ![gif](https://raw.githubusercontent.com/yhekim/To-Do-App-JS/main/To_Do_App_JS.gif)
 
