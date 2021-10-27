@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://secure.meetupstatic.com/photos/event/3/1/b/9/600_488352729.jpeg" style="width: 17px;" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.0.min.js" charset="utf-8"></script>
+
+
+    <title>To Do List</title>
+</head>
+
+<body>
+    <div class="app-container">
+        <header>
+            <div id="time"></div>
+            <div id="date"></div>
+            <div class="text">Your To Do</div>
+        </header>
+
+        <!--End of Header-->
+
+        <form class="form" action="index.html" method="post">
+
+            <button type="button" class="plus" name="button"></button>
+
+            <span class="input">
+                        <input class="new-todo" type="text" id="input-4" placeholder="Add New ToDo" />
+                        <label class="input__label" for="input-4">
+                      </label>
+                    </span>
+
+            <button type="button" class="add" name="button">Add</button>
+
+        </form>
+        <!--End of Form-->
+
+        <div class="wrapper">
+            <ul class="todoList">
+
+            </ul>
+            <!--End of todoList-->
+        </div>
+        <!--End of Wrapper-->
+
+
+    </div>
+    <script src="./js/todo.js"></script>
+    <script src="./js/time.js"></script>
+</body>
+
+</html>

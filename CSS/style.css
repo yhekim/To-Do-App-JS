@@ -1,0 +1,294 @@
+html,
+body {
+    margin: 0 auto;
+    background: #2f3238;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@font-face {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    src: url("https://raw.githubusercontent.com/daysleeperx/todo/master/fonts/HelveticaNeue.dfont");
+}
+
+.app-container {
+    margin: 2% auto;
+    max-width: 450px;
+    height: 572px;
+    background-color: #FFF;
+    overflow: auto;
+}
+
+
+/***************************/
+
+
+/*HEADER*/
+
+
+/**************************/
+
+header {
+    position: relative;
+    width: 100%;
+    height: 125px;
+    background-color: #f50430;
+}
+
+#time {
+    position: absolute;
+    right: 4%;
+    top: 5%;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #FFF;
+}
+
+#date {
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    font-weight: 700;
+    font-size: 3rem;
+    color: #FFF;
+    letter-spacing: 0.02rem;
+}
+
+.text {
+    margin-top: 0.5rem;
+    position: absolute;
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: white;
+    bottom: 14%;
+    left: 4%;
+    letter-spacing: 0.02rem;
+}
+
+
+/*INPUT*/
+
+
+/**************************/
+
+.form {
+    position: relative;
+}
+
+.input {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    width: 61%;
+    height: 55px;
+    margin-left: 17%;
+    border: none;
+}
+
+.input {
+    overflow: hidden;
+}
+
+.new-todo {
+    font-size: 1rem;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 82%;
+    margin-top: 5px;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    color: #595F6E;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.new-todo:focus {
+    outline: none;
+}
+
+.input__label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 0.25em;
+    width: 100%;
+    height: calc(100% - 1rem);
+    text-align: left;
+    pointer-events: none;
+}
+
+.input__label::before,
+.input__label::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 8px);
+    border-bottom: 1px solid #B9C1CA;
+}
+
+.input__label::after {
+    margin-top: 0;
+    border-bottom: 4px solid #f50430;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+}
+
+.new-todo:focus+.input__label::after,
+.input--filled .input__label::after {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.new-todo,
+textarea {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12pt;
+}
+
+
+/***************************/
+
+
+/*BUTTONS*/
+
+
+/**************************/
+
+button {
+    position: absolute;
+    margin: 3%;
+    border-radius: 50%;
+    border: none;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    transform: scale(1.06);
+}
+
+.plus {
+    background-image: url(add.svg);
+    background-position: center;
+    background-color: #fff;
+    pointer-events: none;
+    font-size: 1rem;
+    border: 1px solid #f50430;
+}
+
+.add {
+    right: 1%;
+    color: #FFF;
+    background-color: #f50430;
+    text-align: center;
+    font-weight: 400;
+    font-size: 0.9rem;
+    letter-spacing: 0.02rem;
+}
+
+.delete {
+    right: 1%;
+    background-image: url(garbage.svg);
+    background-color: #FFF;
+    border: 1px solid #f50430;
+}
+
+.delete:hover {
+    background-color: #f50430;
+    background-image: url(garbage2.svg);
+}
+
+.edit {
+    right: 15%;
+    background-image: url(pen.svg);
+    background-color: #FFF;
+    border: 1px solid #f50430;
+}
+
+.edit:hover {
+    background-color: #f50430;
+    background-image: url(pen2.svg);
+}
+
+.done {
+    border: 1px solid #f50430;
+    background-color: #FFF;
+}
+
+.checked {
+    background: url(success.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.crossed {
+    text-decoration: line-through;
+}
+
+
+/*WRAPPER*/
+
+.todoList {
+    list-style: none;
+    padding: 0;
+}
+
+.todoList>li {
+    position: relative;
+    width: 100%;
+    height: 51px;
+    padding: 0% 0% 5%;
+}
+
+.todoList>li:hover {
+    box-shadow: 0px 0px 5px rgba(245, 4, 48, 1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.todoList>li>span {
+    font-weight: 500;
+    position: absolute;
+    bottom: 35%;
+    left: 17%;
+    width: 50%;
+    height: 30%;
+    overflow: auto;
+}
+
+.todoList>li>span:focus {
+    outline: none;
+}
+
+
+/***************************/
+
+
+/*MEDIA QUERIES*/
+
+
+/**************************/
+
+@media screen and (max-width: 428px) {
+    .app-container {
+        margin: 0 auto;
+        width: 100%;
+    }
+    button {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .app-container {
+        margin: 0 auto;
+        width: 320px;
+    }
+}
