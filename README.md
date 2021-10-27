@@ -6,6 +6,8 @@
 ## Description
 Project aims to create find the number game (between 0 to 100).
 
+![gif](https://raw.githubusercontent.com/yhekim/To-Do-App-JS/main/To_Do_App_JS.gif)
+
 ## Problem Statement
 
 - Your company has recently started on a project that aims to create a basic to do app game. So you and your colleagues have started to work on the project.
@@ -76,7 +78,7 @@ Make a To-Do App as in the sample designs.
 
 - Step 5: Deploy your application on Github template to showcase your app within your team.
 
-![gif](https://raw.githubusercontent.com/yhekim/To-Do-App-JS/main/To_Do_App_JS.gif)
+
 
 
 ## Happy coding 💪
