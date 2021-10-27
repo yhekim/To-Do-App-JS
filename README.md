@@ -1,7 +1,7 @@
-<p>Clarusway<img align="right"
-  src="https://secure.meetupstatic.com/photos/event/3/1/b/9/600_488352729.jpeg"  width="15px"></p>
-
 # Project-002 : To-Do App (JS-02)
+- https://sleepy-brattain-d7efd2.netlify.app/
+
+- https://yhekim.github.io/To-Do-App-JS/
 
 ## Description
 Project aims to create find the number game (between 0 to 100).
@@ -75,6 +75,8 @@ Make a To-Do App as in the sample designs.
 - Step 4: Push your application into your own public repo on Github
 
 - Step 5: Deploy your application on Github template to showcase your app within your team.
+
+![gif](https://raw.githubusercontent.com/yhekim/To-Do-App-JS/main/To_Do_App_JS.gif)
 
 
 ## Happy coding 💪
